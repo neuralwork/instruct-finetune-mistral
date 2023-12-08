@@ -1,0 +1,7 @@
+torch==2.1.0
+trl==0.4.7
+peft==0.4.0
+accelerate==0.21.0
+datasets==2.13.0
+transformers==4.35.0
+huggingface-hub==0.19.4
