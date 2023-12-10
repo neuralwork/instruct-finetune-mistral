@@ -104,7 +104,7 @@ def main():
             <h1 style="font-weight: 900; margin-bottom: 7px;">
             Instruct Fine-tune Mistral-7B-v0
             </h1>
-            <p>Mistral-7B-v0 fine-tuned on the [neuralwork/style-instruct](https://huggingface.co/datasets/neuralwork/fashion-style-instruct) dataset.
+            <p>Mistral-7B-v0 fine-tuned on the <a href="https://huggingface.co/datasets/neuralwork/fashion-style-instruct">neuralwork/style-instruct</a> dataset.
             To use the model, simply describe your body type and personal style and select the type of event you're planning to go.
             <br/>
             See our <a href="https://neuralwork.ai/">blog post</a> for a detailed tutorial to fine-tune Mistral on your own dataset.
@@ -155,12 +155,12 @@ def main():
                 )
                 generate_button = gr.Button("Get outfit suggestions")
 
-            with gr.Column(scale=4):
+            with gr.Column(scale=2):
                 response = gr.Textbox(
                     lines=6, label="Outfit suggestions", interactive=False
                 )
 
-        gr.Markdown("Made with love by [neuralwork](https://neuralwork.ai/)")
+        gr.Markdown("From [neuralwork](https://neuralwork.ai/) with :heart:")
 
         generate_button.click(
             fn=generate,
