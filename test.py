@@ -32,7 +32,7 @@ def postprocess(outputs, tokenizer, prompt, sample):
 
 
 def run_model(config):
-    # Load dataset and select a random sample
+    # load dataset and select a random sample
     dataset = load_dataset(config.dataset)
     sample = dataset[randrange(len(dataset))]
     prompt = format_instruction(sample)
@@ -60,11 +60,16 @@ def run_model(config):
     postprocess(outputs, tokenizer, prompt, sample)
 
 
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--dataset', type=str, default='data/style', help='HF dataset id or path to local dataset folder.')
-    parser.add_argument('--model_id', type=str, default='llama-2-style', help='HF LoRA model id or path to local finetuned model folder.')
+    parser.add_argument(
+        "--dataset", type=str, default="neuralwork/fashion-style-instruct",
+        help="HF dataset id or path to local dataset folder."
+    )
+    parser.add_argument(
+        "--model_id", type=str, default="neuralwork/mistral-7b-style-instruct", 
+        help="HF LoRA model id or path to local finetuned model folder."
+    )
 
     config = parser.parse_args()
     run_model(config)
