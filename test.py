@@ -21,8 +21,8 @@ def format_instruction(sample):
 
 def postprocess(outputs, tokenizer, prompt, sample):
     outputs = outputs.detach().cpu().numpy()
-    output = tokenizer.batch_decode(outputs, skip_special_tokens=True)
-    outputs = outputs[0][len(prompt):]
+    outputs = tokenizer.batch_decode(outputs, skip_special_tokens=True)
+    output = outputs[0][len(prompt):]
 
     print(f"Instruction: \n{sample['input']}\n")
     print(f"Context: \n{sample['context']}\n")
