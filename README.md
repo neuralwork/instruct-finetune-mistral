@@ -27,4 +27,4 @@ To test the fine-tuned model with a random sample selected from the dataset, run
 ## License
 This project is licensed under the [MIT license](https://github.com/neuralwork/finetune-mistral/blob/main/LICENSE).
 
-From [neuralwork](https://neuralwork.ai/) with :heart:.
+From [neuralwork](https://neuralwork.ai/) with :heart:
