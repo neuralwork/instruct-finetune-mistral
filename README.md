@@ -1,5 +1,5 @@
 ## Fine-tuning LLMs with PEFT
-This project is a tutorial on parameter-efficient fine-tuning (PEFT) and quantization of the [Mistral 7B v0.1](https://huggingface.co/mistralai/Mistral-7B-v0.1) model. We use LoRA for PEFT and 4-bit quantization to compress the model, and fine-tune the model on a semi-manually crafted fashion style recommendation instruct [dataset](https://huggingface.co/datasets/neuralwork/fashion-style-instruct). For more information and a step by step guide, see our [blog post](https://neuralwork.ai/).
+This project is a tutorial on parameter-efficient fine-tuning (PEFT) and quantization of the [Mistral 7B v0.1](https://huggingface.co/mistralai/Mistral-7B-v0.1) model. We use LoRA for PEFT and 4-bit quantization to compress the model, and fine-tune the model on a semi-manually crafted fashion style recommendation instruct [dataset](https://huggingface.co/datasets/neuralwork/fashion-style-instruct). For more information and a step by step guide, see our [blog post](https://blog.neuralwork.ai/an-llm-fine-tuning-cookbook-with-mistral-7b/).
 
 ## Usage
 Start by cloning the repository, setting up a conda environment and installing the dependencies. We tested our scripts with python 3.9 and CUDA 11.7.
