@@ -135,7 +135,7 @@ if __name__ == "__main__":
         help="HF hub id of the base model to finetune."
     )
     parser.add_argument(
-        "--model_name", type=str, default="llama-2-4bit", help="Name of finetuned model."
+        "--model_name", type=str, default="mistral-7b-style-instruct", help="Name of finetuned model."
     )
     parser.add_argument(
         "--auth_token", type=str, default=None, 
