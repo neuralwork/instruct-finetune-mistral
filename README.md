@@ -16,7 +16,7 @@ You can finetune the model on our fashion-style-instruct [dataset](https://huggi
 ```
 accelerate config default
 
-python finetune_model.py --dataset=<HF_DATASET_ID_OR_PATH> --base_model="NousResearch/Llama-2-7b-hf" --model_name=<YOUR_MODEL_NAME> --auth_token=<HF_AUTH_TOKEN> --push_to_hub
+python finetune_model.py --dataset=<HF_DATASET_ID_OR_PATH> --base_model="mistralai/Mistral-7B-v0.1" --model_name=<YOUR_MODEL_NAME> --auth_token=<HF_AUTH_TOKEN> --push_to_hub
 ```
 
 One model training is completed, only the fine-tuned (LoRA) parameters are saved, which are loaded to overwrite the corresponding parameters of the base model during testing.  
